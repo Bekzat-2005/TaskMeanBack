@@ -12,9 +12,9 @@ app.use(express.json());
 
 
 
-mongoose.connect(config.db, {})
+mongoose.connect(config.db2, {})
 .then(() => console.log("Baza kosildy"))
-.catch(() => console.error("Kate"))
+.catch(() => console.error("KAte"))
 
 const taskSchema = new mongoose.Schema({
     title: String
